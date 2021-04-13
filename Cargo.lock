@@ -188,13 +188,28 @@ dependencies = [
 ]
 
 [[package]]
-name = "nalgebra-glm"
-version = "0.11.0"
+name = "nalgebra"
+version = "0.26.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "96545c10df0370595ce84c402132b21c5186cdcdbda27f4a01805201ac447193"
+checksum = "e420697df99b528ac4bac53d6b59936219c9f490933b79eab8e7b146152eb9ca"
 dependencies = [
  "approx",
- "nalgebra",
+ "matrixmultiply",
+ "num-complex",
+ "num-rational",
+ "num-traits",
+ "simba",
+ "typenum",
+]
+
+[[package]]
+name = "nalgebra-glm"
+version = "0.12.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "eb2e88a888ba4c1e4f3b78acd5136d5548046176831d99f3ac94ef9a596c2ed0"
+dependencies = [
+ "approx",
+ "nalgebra 0.26.1",
  "num-traits",
  "simba",
 ]
@@ -310,7 +325,7 @@ dependencies = [
  "imgui",
  "imgui-opengl-renderer",
  "imgui-sdl2",
- "nalgebra",
+ "nalgebra 0.25.4",
  "nalgebra-glm",
  "sdl2",
 ]
