@@ -9,7 +9,7 @@ edition = "2018"
 [dependencies]
 gl = "0.14.0"
 sdl2 = "0.35.2"
-nalgebra = "0.31.0"
+nalgebra = "0.31.2"
 nalgebra-glm = "0.17.0"
 imgui = "0.7.0"
 imgui-sdl2 = "0.14.1"
